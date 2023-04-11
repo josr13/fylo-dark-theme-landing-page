@@ -1,0 +1,15 @@
+:root {
+  --bg-email: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-footer: hsl(216, 53%, 9%);
+  --bg-testimonial: hsl(219, 30%, 18%);
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --font-heading: "Open Sans", sans-serif;
+  --font-body: "Raleway", sans-serif;
+
+  background: var(--bg-main);
+  color: var(--white);
+}
