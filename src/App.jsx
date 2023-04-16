@@ -6,7 +6,15 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero
+        src={"src/assets/illustration-intro.png"}
+        alt={"Hero image"}
+        heading={"All your files in one secure location, accessible anywhere."}
+        body={
+          "Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers."
+        }
+        cta={"Get Started"}
+      />
       <section className="featureWrapper">
         <Feature
           icon={"src/assets/icon-access-anywhere.svg"}
