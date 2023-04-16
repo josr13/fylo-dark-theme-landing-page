@@ -10,13 +10,12 @@
   --font-heading: "Open Sans", sans-serif;
   --font-body: "Raleway", sans-serif;
 
-  background: var(--bg-main);
   color: var(--white);
   font-family: var(--font-body);
 }
 
 body {
-  padding: 2em;
+  padding: 0;
   margin: 0;
 }
 
@@ -26,6 +25,8 @@ a {
 }
 
 .nav {
+  padding: 2em;
+  background: var(--bg-email);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
