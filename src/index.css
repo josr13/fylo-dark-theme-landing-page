@@ -92,7 +92,7 @@ main {
   font-size: inherit;
   font-weight: 700;
   color: inherit;
-  background: var(--blue);
+  background: linear-gradient(to right, var(--cyan), var(--blue));
   padding: 1em 6em;
   margin: 1em;
   border: none;
