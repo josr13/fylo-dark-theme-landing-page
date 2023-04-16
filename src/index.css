@@ -98,3 +98,30 @@ main {
   border: none;
   border-radius: 2em;
 }
+
+.featureWrapper {
+  padding: 3em 2em;
+  background: var(--bg-main);
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.feat {
+  padding: 2.5em 0;
+}
+
+.featIcon {
+  height: 6em;
+  padding: 1em;
+}
+
+.featHeading {
+  font-size: large;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.featBody {
+  font-size: 14px;
+  margin: 0;
+}
