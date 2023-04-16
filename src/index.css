@@ -7,16 +7,21 @@
   --blue: hsl(198, 60%, 50%);
   --light-red: hsl(0, 100%, 63%);
   --white: hsl(0, 0%, 100%);
-  --font-heading: "Open Sans", sans-serif;
-  --font-body: "Raleway", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 
   color: var(--white);
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   padding: 0;
   margin: 0;
+  background: var(--bg-email);
 }
 
 a {
@@ -25,7 +30,7 @@ a {
 }
 
 .nav {
-  padding: 2em;
+  padding: 1.5em;
   background: var(--bg-email);
   display: flex;
   flex-direction: row;
@@ -54,5 +59,42 @@ a {
 }
 
 .heroImg {
+  display: flex; /*If removed, there's a blank space between this and ,heroTxt*/
+  padding: 1em 2em;
   width: 100%;
+  background: var(--bg-email);
+}
+
+main {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.heroDesc {
+  padding: 1em 2em;
+  background: var(--bg-main);
+}
+
+.heroDesc > h1 {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1.5em;
+}
+
+.heroDesc > p {
+  font-family: var(--font-body);
+  line-height: 1.5em;
+}
+
+.heroDesc > .cta {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+  background: var(--blue);
+  padding: 1em 6em;
+  margin: 1em;
+  border: none;
+  border-radius: 2em;
 }
