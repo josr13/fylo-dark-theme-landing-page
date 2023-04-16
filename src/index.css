@@ -12,4 +12,46 @@
 
   background: var(--bg-main);
   color: var(--white);
+  font-family: var(--font-body);
+}
+
+body {
+  padding: 2em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logoLink {
+  width: 6em;
+}
+
+.logo {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar > li {
+  list-style: none;
+  padding-left: 1em;
+}
+
+.heroImg {
+  width: 100%;
 }
