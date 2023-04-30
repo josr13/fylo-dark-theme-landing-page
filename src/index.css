@@ -51,11 +51,11 @@ a {
   align-items: center;
   padding: 0;
   margin: 0;
+  column-gap: 1em;
 }
 
 .navbar > li {
   list-style: none;
-  padding-left: 1em;
 }
 
 .heroImg {
