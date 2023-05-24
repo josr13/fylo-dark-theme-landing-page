@@ -21,7 +21,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: var(--bg-email);
+  background: var(--bg-main);
 }
 
 a {
@@ -73,7 +73,6 @@ main {
 
 .heroDesc {
   padding: 1em 2em;
-  background: var(--bg-main);
 }
 
 .heroDesc > h1 {
@@ -104,14 +103,9 @@ main {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   padding: 6em 2em;
-  background: var(--bg-main);
   text-align: center;
   line-height: 1.5em;
   row-gap: 5em;
-}
-
-.feat {
-  /* padding: 2.5em 0; */
 }
 
 .featIcon {
@@ -128,4 +122,36 @@ main {
 .featBody {
   font-size: 14px;
   margin: 0;
+}
+
+.bg-main {
+  background-color: var(--bg-main);
+}
+
+.infoWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1em 0;
+  line-height: 1.5em;
+}
+
+.infoHeading {
+  font-size: large;
+  padding-left: 0.25em;
+}
+
+.infoDesc {
+  padding: 1em 2em;
+}
+
+.infoBody {
+  font-size: 14px;
+}
+
+.infoMore {
+  font-size: 0.75em;
+  color: var(--cyan);
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
 }

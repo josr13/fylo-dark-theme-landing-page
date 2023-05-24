@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Feature from "./components/Feature";
+import Info from "./components/Info";
 
 export default function App() {
   return (
@@ -49,6 +50,18 @@ export default function App() {
           }
         />
       </section>
+      <Info
+        src={"/assets/illustration-stay-productive.png"}
+        alt={"Stay productive illustration"}
+        heading={"Stay productive, wherever you are"}
+        body1={
+          "Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs."
+        }
+        body2={
+          "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required."
+        }
+        more={"See how Fylo works ➡"}
+      />
     </>
   );
 }
