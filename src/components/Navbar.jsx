@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <a href="" className="logoLink">
-        <img className="logo" src="src/assets/logo.svg" alt="Fylo logo" />
+        <img className="logo" src="/assets/logo.svg" alt="Fylo logo" />
       </a>
       <ul className="navbar">
         <li>

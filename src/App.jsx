@@ -7,7 +7,7 @@ export default function App() {
     <>
       <Navbar />
       <Hero
-        src={"src/assets/illustration-intro.png"}
+        src={"/assets/illustration-intro.png"}
         alt={"Hero image"}
         heading={"All your files in one secure location, accessible anywhere."}
         body={
@@ -17,7 +17,7 @@ export default function App() {
       />
       <section className="featureWrapper">
         <Feature
-          icon={"src/assets/icon-access-anywhere.svg"}
+          icon={"/assets/icon-access-anywhere.svg"}
           alt={"Files icon"}
           heading={"Access your files, anywhere"}
           body={
@@ -25,7 +25,7 @@ export default function App() {
           }
         />
         <Feature
-          icon={"src/assets/icon-security.svg"}
+          icon={"/assets/icon-security.svg"}
           alt={"Security icon"}
           heading={"Security you can trust"}
           body={
@@ -33,7 +33,7 @@ export default function App() {
           }
         />
         <Feature
-          icon={"src/assets/icon-collaboration.svg"}
+          icon={"/assets/icon-collaboration.svg"}
           alt={"Collaboration icon"}
           heading={"Real-time collaboration"}
           body={
@@ -41,7 +41,7 @@ export default function App() {
           }
         />
         <Feature
-          icon={"src/assets/icon-any-file.svg"}
+          icon={"/assets/icon-any-file.svg"}
           alt={"Storage icon"}
           heading={"Store any type of file"}
           body={

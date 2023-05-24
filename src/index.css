@@ -60,7 +60,7 @@ a {
 
 .heroImg {
   display: flex; /*If removed, there's a blank space between this and ,heroTxt*/
-  padding: 1em 2em;
+  padding: 2em 2em 1em;
   width: 100%;
   background: var(--bg-email);
 }
@@ -100,14 +100,18 @@ main {
 }
 
 .featureWrapper {
-  padding: 3em 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 6em 2em;
   background: var(--bg-main);
   text-align: center;
   line-height: 1.5em;
+  row-gap: 5em;
 }
 
 .feat {
-  padding: 2.5em 0;
+  /* padding: 2.5em 0; */
 }
 
 .featIcon {
