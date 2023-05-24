@@ -3,7 +3,7 @@ import React from "react";
 export default function Info({ src, alt, heading, body1, body2, more }) {
   return (
     <section className="infoWrapper">
-      <img className="heroImg bg-main" src={src} alt={alt} />
+      <img className="infoImg" src={src} alt={alt} />
       <div className="infoDesc">
         <h2 className="infoHeading">{heading}</h2>
         <p className="infoBody">{body1}</p>

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Feature from "./components/Feature";
 import Info from "./components/Info";
+import Testimonials from "./components/Testimonials";
 
 export default function App() {
   return (
@@ -62,6 +63,37 @@ export default function App() {
         }
         more={"See how Fylo works ➡"}
       />
+      <section className="testimWrapper">
+        <img
+          src="/assets/bg-quotes.png"
+          alt="Quote icon"
+          className="quote-icon"
+        />
+        <Testimonials
+          quote={
+            "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+          }
+          picture={"/assets/profile-1.jpg"}
+          customer={"Satish Patel"}
+          position={"Founder & CEO, Huddle"}
+        />
+        <Testimonials
+          quote={
+            "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+          }
+          picture={"/assets/profile-2.jpg"}
+          customer={"Bruce McKenzie"}
+          position={"Founder & CEO, Huddle"}
+        />
+        <Testimonials
+          quote={
+            "Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine."
+          }
+          picture={"/assets/profile-3.jpg"}
+          customer={"Iva Boyd"}
+          position={"Founder & CEO, Huddle"}
+        />
+      </section>
     </>
   );
 }
