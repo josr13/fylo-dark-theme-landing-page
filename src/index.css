@@ -124,10 +124,6 @@ main {
   margin: 0;
 }
 
-.bg-main {
-  background-color: var(--bg-main);
-}
-
 .infoWrapper {
   display: flex;
   flex-direction: column;
@@ -213,4 +209,51 @@ main {
 .testimPosition {
   font-size: 0.25em;
   margin: 0;
+}
+
+.signupWrapper {
+  display: grid;
+  background-color: var(--bg-email);
+  margin: 4em 2em;
+  padding: 2em 2em;
+  line-height: 1.25em;
+  border-radius: 10px;
+}
+
+.signupDesc {
+  text-align: center;
+}
+
+.signupHeader {
+  font-size: large;
+}
+
+.signupBody {
+  font-size: small;
+}
+
+.signupEmail {
+  border: none;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em;
+  font-size: 14px;
+  background-color: var(--white);
+  font-family: inherit;
+}
+
+.signupEmail::placeholder {
+  font-size: 0.65em;
+  color: lightgray;
+}
+
+.signupBtn {
+  border: none;
+  border-radius: 25px;
+  padding: 1em;
+  margin: 1em;
+  background: linear-gradient(to right, var(--cyan), var(--blue));
+  color: inherit;
+  font-family: inherit;
+  font-weight: 700;
 }
