@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Feature from "./components/Feature";
 import Info from "./components/Info";
 import Testimonials from "./components/Testimonials";
+import Signup from "./components/Signup";
 
 export default function App() {
   return (
@@ -94,6 +95,14 @@ export default function App() {
           position={"Founder & CEO, Huddle"}
         />
       </section>
+      <Signup
+        header={"Get early access today"}
+        body={
+          "It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you."
+        }
+        input={"email@example.com"}
+        button={"Get Started For Free"}
+      />
     </>
   );
 }
