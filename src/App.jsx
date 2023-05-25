@@ -4,6 +4,7 @@ import Feature from "./components/Feature";
 import Info from "./components/Info";
 import Testimonials from "./components/Testimonials";
 import Signup from "./components/Signup";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -102,6 +103,19 @@ export default function App() {
         }
         input={"email@example.com"}
         button={"Get Started For Free"}
+      />
+      <Footer
+        addressIcon={"/assets/icon-location.svg"}
+        addressAlt={"Address icon"}
+        address={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        }
+        numberIcon={"/assets/icon-phone.svg"}
+        numberAlt={"Number icon"}
+        number={"+1-543-123-4567"}
+        mailIcon={"/assets/icon-email.svg"}
+        mailAlt={"Mail icon"}
+        mail={"example@fylo.com"}
       />
     </>
   );
