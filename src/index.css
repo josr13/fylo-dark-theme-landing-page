@@ -250,7 +250,7 @@ main {
 .signupBtn {
   border: none;
   border-radius: 25px;
-  padding: 1em;
+  padding: 1.2em;
   margin: 1em 0;
   background: linear-gradient(to right, var(--cyan), var(--blue));
   color: inherit;
