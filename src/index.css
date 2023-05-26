@@ -122,6 +122,7 @@ main {
 .featBody {
   font-size: 14px;
   margin: 0;
+  font-family: var(--font-body);
 }
 
 .infoWrapper {
@@ -130,6 +131,7 @@ main {
   padding: 1em 2em;
   line-height: 1.5em;
   row-gap: 2em;
+  font-family: var(--font-body);
 }
 
 .infoImg {
@@ -141,10 +143,11 @@ main {
   font-size: large;
   margin: 0;
   padding: 0.5em 0 0.5em 0.25em;
+  font-family: var(--font-heading);
 }
 
 .infoBody {
-  font-size: 14px;
+  font-size: 0.9em;
   margin: 0;
   padding: 0.5em 0;
 }
@@ -162,6 +165,7 @@ main {
   flex-direction: column;
   padding: 6em 3em;
   gap: 1.5em;
+  font-family: var(--font-body);
 }
 
 .quote-icon {
@@ -218,6 +222,7 @@ main {
   padding: 2em 2em;
   line-height: 1.25em;
   border-radius: 10px;
+  font-family: var(--font-body);
 }
 
 .signupDesc {
@@ -225,11 +230,12 @@ main {
 }
 
 .signupHeader {
-  font-size: large;
+  font-size: 1.1em;
+  font-family: var(--font-heading);
 }
 
 .signupBody {
-  font-size: small;
+  font-size: smaller;
 }
 
 .signupEmail {
@@ -245,6 +251,7 @@ main {
 .signupEmail::placeholder {
   font-size: 0.65em;
   color: lightgray;
+  padding: 0 1.5em;
 }
 
 .signupBtn {
@@ -256,4 +263,57 @@ main {
   color: inherit;
   font-family: inherit;
   font-weight: 700;
+  font-family: var(--font-heading);
+}
+
+.footer {
+  background: var(--bg-footer);
+  padding: 4em 2em 3em;
+  font-family: var(--font-body);
+}
+
+.footer p {
+  margin: 0;
+}
+
+.logoImg {
+  margin: 0 0 2em 0.5em;
+}
+
+.contact {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 1.5em;
+  margin: 1.25em 0;
+}
+
+.footerIcon {
+  height: 1em;
+}
+
+.addressTxt {
+  font-size: 1.05em;
+}
+
+.contactTxt {
+  font-size: 0.9em;
+}
+
+.footerContact {
+  margin-bottom: 5em;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+  margin-bottom: 3em;
+}
+
+.footerSocials {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+  padding: 1em 0 0;
+  justify-content: center;
 }

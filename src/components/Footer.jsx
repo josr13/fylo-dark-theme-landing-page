@@ -12,31 +12,31 @@ export default function Footer({
   mail,
 }) {
   return (
-    <footer>
-      <a href="" className="logoLink">
-        <img className="logo" src="/assets/logo.svg" alt="Fylo logo" />
+    <footer className="footer">
+      <a href="" className="logoFooter">
+        <img className="logoImg" src="/assets/logo.svg" alt="Fylo logo" />
       </a>
-      <div className="footerAddress">
-        <img className="addressImg" src={addressIcon} alt={addressAlt} />
+      <div className="contact">
+        <img className="footerIcon" src={addressIcon} alt={addressAlt} />
         <p className="addressTxt">{address}</p>
       </div>
       <div className="footerContact">
-        <div className="footerNumber">
-          <img className="numberImg" src={numberIcon} alt={numberAlt} />
-          <p className="numberTxt">{number}</p>
+        <div className="contact">
+          <img className="footerIcon" src={numberIcon} alt={numberAlt} />
+          <p className="contactTxt">{number}</p>
         </div>
-        <div className="footerMail">
-          <img className="mailImg" src={mailIcon} alt={mailAlt} />
-          <p className="mailTxt">{mail}</p>
+        <div className="contact">
+          <img className="footerIcon" src={mailIcon} alt={mailAlt} />
+          <p className="contactTxt">{mail}</p>
         </div>
       </div>
-      <div className="footerLinks1">
+      <div className="footerLinks">
         <a href="">About Us</a>
         <a href="">Jobs</a>
         <a href="">Press</a>
         <a href="">Blog</a>
       </div>
-      <div className="footerLinks2">
+      <div className="footerLinks">
         <a href="">Contact Us</a>
         <a href="">Terms</a>
         <a href="">Privacy</a>
