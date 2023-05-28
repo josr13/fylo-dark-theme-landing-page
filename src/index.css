@@ -59,6 +59,16 @@ a {
   font-size: 1em;
 }
 
+.navbar > li:hover {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.navbar > li:active {
+  color: var(--blue);
+  transition: color 0.1s ease-in-out;
+}
+
 .heroImg {
   display: flex; /*If removed, there's a blank space between this and ,heroTxt*/
   padding: 2em 2em 1em;
@@ -98,6 +108,17 @@ main {
   border: none;
   border-radius: 2em;
   cursor: pointer;
+}
+
+.heroDesc > .cta:hover {
+  background: var(--blue);
+  box-shadow: 0 0 6px 0 var(--cyan);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.heroDesc > .cta:active {
+  color: var(--bg-main);
+  transition: color 0.1s ease-in-out;
 }
 
 .featureWrapper {
@@ -160,6 +181,12 @@ main {
   text-decoration: underline;
   text-underline-offset: 0.5em;
   padding: 0.5em 0;
+}
+
+.infoMore:hover {
+  color: var(--blue);
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
 }
 
 .testimWrapper {
@@ -266,6 +293,18 @@ main {
   font-family: inherit;
   font-weight: 700;
   font-family: var(--font-heading);
+  cursor: pointer;
+}
+
+.signupBtn:hover {
+  background: var(--cyan);
+  box-shadow: 0 0 6px 0 var(--blue);
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.signupBtn:active {
+  color: var(--bg-email);
+  transition: color 0.1s ease-in-out;
 }
 
 .footer {
@@ -312,12 +351,31 @@ main {
   margin-bottom: 3em;
 }
 
+.footerLinks > a:hover {
+  font-weight: 700;
+}
+
+.footerLinks > a:active {
+  color: var(--blue);
+  transition: color 0.3s ease-in-out;
+}
+
 .footerSocials {
   display: flex;
   flex-direction: row;
   column-gap: 1em;
   padding: 1em 0 0;
   justify-content: center;
+}
+
+.social:hover {
+  color: var(--cyan);
+  transition: color 0.3s ease-in-out;
+}
+
+.social:active {
+  color: var(--blue);
+  transition: color 0.3s ease-in-out;
 }
 
 @media screen and (width >= 680px) {
