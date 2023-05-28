@@ -56,6 +56,7 @@ a {
 
 .navbar > li {
   list-style: none;
+  font-size: 1em;
 }
 
 .heroImg {
@@ -96,6 +97,7 @@ main {
   margin: 1em;
   border: none;
   border-radius: 2em;
+  cursor: pointer;
 }
 
 .featureWrapper {
@@ -316,4 +318,272 @@ main {
   column-gap: 1em;
   padding: 1em 0 0;
   justify-content: center;
+}
+
+@media screen and (width >= 680px) {
+  .nav {
+    padding: 5em 5em 2em;
+  }
+
+  .logoLink {
+    width: 10em;
+  }
+
+  .navbar {
+    column-gap: 3em;
+  }
+
+  .navbar > li {
+    font-size: 1.5em;
+  }
+
+  main {
+    background: var(--bg-email);
+    padding-bottom: 5em;
+  }
+
+  .heroImg {
+    width: 50%;
+    margin: auto;
+    background-color: inherit;
+  }
+
+  .heroDesc {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+  }
+
+  .heroDesc > p {
+    margin: 1em 3em;
+  }
+
+  .featureWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5em;
+    gap: 5em;
+  }
+
+  .featIcon {
+    height: 7em;
+  }
+
+  .featHeading {
+    font-size: larger;
+  }
+
+  .featBody {
+    font-size: medium;
+  }
+
+  .infoWrapper {
+    flex-direction: row;
+    padding: 4em;
+    column-gap: 5em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .infoImg {
+    width: 40%;
+  }
+
+  .infoDesc {
+    width: 40%;
+  }
+
+  .infoHeading {
+    font-size: 1.75em;
+    line-height: 1em;
+    padding: 0 0 0.25em;
+  }
+
+  .infoBody {
+    font-size: medium;
+    padding: 0.75em 0;
+  }
+
+  .infoMore {
+    font-size: medium;
+    padding: 0.75em 0;
+  }
+
+  .testimWrapper {
+    flex-direction: row;
+    padding: 6em;
+    gap: 2em;
+    position: relative;
+  }
+
+  .quote-icon {
+    position: absolute;
+    width: auto;
+    inset: 4em 5.5em;
+    padding: 0;
+    z-index: -1;
+  }
+
+  .testim {
+    padding-top: 2.5em;
+  }
+
+  .testimQuote {
+    padding-bottom: 2em;
+  }
+
+  .testimCustomer {
+    font-size: xx-small;
+  }
+
+  .testimPosition {
+    font-size: 0.4em;
+  }
+
+  .signupWrapper {
+    margin: 6em 8em;
+    padding: 2em;
+    justify-items: center;
+  }
+
+  .signupDesc {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+
+  .signupHeader {
+    font-size: x-large;
+  }
+
+  .signupBody {
+    font-size: small;
+  }
+
+  .signupEmail {
+    padding: 1em;
+    margin: 1em 0;
+    font-size: smaller;
+    grid-area: 2 / 1 / 3 / 2;
+    height: 3rem;
+    min-width: 17em;
+  }
+
+  .signupEmail::placeholder {
+    font-size: smaller;
+    padding: 0;
+  }
+
+  .signupBtn {
+    padding: 1.2em;
+    margin: 1em 0;
+    grid-area: 2 / 2 / 3 / 3;
+    height: 3rem;
+    font-size: smaller;
+    width: max-content;
+  }
+
+  .footer {
+    display: grid;
+    padding: 4em 4em 1em;
+    column-gap: 1em;
+    font-size: 0.85em;
+  }
+
+  .logoFooter {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+
+  .contact {
+    margin: 0 0 1.25em;
+  }
+
+  .footerSocials {
+    padding: 0;
+    column-gap: 1.5em;
+  }
+
+  .social > svg {
+    width: 1.25em;
+    height: auto;
+  }
+}
+
+@media screen and (width >= 1440px) {
+  .featureWrapper {
+    padding: 5em 25em;
+    column-gap: 12em;
+    row-gap: 6em;
+  }
+
+  .infoBody {
+    font-size: large;
+  }
+
+  .infoMore {
+    font-size: large;
+  }
+
+  .infoHeading {
+    font-size: 3em;
+  }
+
+  .testimWrapper {
+    flex-direction: row;
+    padding: 8em 10em;
+    gap: 2em;
+    position: relative;
+  }
+
+  .quote-icon {
+    position: absolute;
+    width: auto;
+    inset: 5.75em 9.5em;
+    padding: 0;
+    z-index: -1;
+  }
+
+  .testimQuote {
+    font-size: medium;
+  }
+
+  .testimCustomer {
+    font-size: small;
+  }
+
+  .testimPosition {
+    font-size: x-small;
+  }
+
+  .signupWrapper {
+    margin: 6em 22em;
+    padding: 2em 8em;
+  }
+
+  .signupHeader {
+    font-size: xx-large;
+  }
+
+  .signupBody {
+    font-size: medium;
+    padding: 1em 8em;
+  }
+
+  .signupEmail {
+    padding: 1em 16em;
+    font-size: medium;
+  }
+
+  .signupEmail::placeholder {
+    font-size: small;
+  }
+
+  .signupBtn {
+    padding: 1em 3em;
+    font-size: medium;
+  }
+
+  .footer {
+    padding: 4em 8em 4em;
+    column-gap: 8em;
+    font-size: 1.1em;
+  }
 }
