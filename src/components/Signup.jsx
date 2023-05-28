@@ -29,12 +29,12 @@ export default function Signup({ header, body, input, button }) {
         value={email}
         onChange={handleChange}
       />
+      {!isValidEmail && email !== "" && (
+        <p className="error">Please enter a valid email address</p>
+      )}
       <button className="signupBtn" type="submit">
         {button}
       </button>
-      {!isValidEmail && email !== "" && (
-        <p className="error">Please enter a valid email address.</p>
-      )}
     </section>
   );
 }
