@@ -1,6 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Signup({ header, body, input, button }) {
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
+  const handleChange = (e) => {
+    const inputValue = e.target.value;
+    setEmail(inputValue);
+    setIsValidEmail(validateEmail(inputValue));
+  };
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   return (
     <section className="signupWrapper">
       <div className="signupDesc">
@@ -12,10 +26,15 @@ export default function Signup({ header, body, input, button }) {
         type="email"
         name="email"
         placeholder={input}
+        value={email}
+        onChange={handleChange}
       />
       <button className="signupBtn" type="submit">
         {button}
       </button>
+      {!isValidEmail && email !== "" && (
+        <p className="error">Please enter a valid email address.</p>
+      )}
     </section>
   );
 }
