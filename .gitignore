@@ -47,3 +47,5 @@ style-guide.md
 *.css.map
 *.sass.map
 *.scss.map
+
+vite.config.js.timestamp-*.mjs
