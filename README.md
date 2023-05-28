@@ -1,4 +1,4 @@
-# Advice generator app
+# Fylo landing page with dark theme and features grid
 
 ## Overview
 
