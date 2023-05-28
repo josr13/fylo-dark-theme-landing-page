@@ -42,13 +42,13 @@ export default function Footer({
         <a href="">Privacy</a>
       </div>
       <div className="footerSocials">
-        <a className="social" href="">
+        <a className="social" href="" aria-label="Facebook">
           <i className="fa-brands fa-facebook"></i>
         </a>
-        <a className="social" href="">
+        <a className="social" href="" aria-label="Twitter">
           <i className="fa-brands fa-twitter"></i>
         </a>
-        <a className="social" href="">
+        <a className="social" href="" aria-label="Instagram">
           <i className="fa-brands fa-instagram"></i>
         </a>
       </div>
